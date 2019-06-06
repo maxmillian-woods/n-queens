@@ -205,7 +205,7 @@
     hasAnyMinorDiagonalConflicts: function () {
       const n = this.get('n');
 
-      for( let i = n + 1; i >= 0; i-- ) {
+      for( let i = (n * 2); i > 0; i-- ) {
         if( this.hasMinorDiagonalConflictAt(i) ) {
           return true;
         }
